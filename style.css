@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Welcome Page Styles */
+.welcome-page {
+    background: linear-gradient(135deg, #e6e6fa, #d8bfd8);
+}
+
+.welcome-container {
+    text-align: center;
+}
+
+.welcome-title {
+    text-decoration: none;
+    color: #4b0082;
+    transition: transform 0.3s ease;
+}
+
+.welcome-title:hover {
+    transform: scale(1.05);
+}
+
+.welcome-title h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.welcome-title p {
+    font-size: 1.2rem;
+}
+
+/* Pantry Page Styles */
+.pantry-page {
+    background-color: #f5f0ff;
+}
+
+.pantry-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+h2 {
+    color: #4b0082;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#pantry-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#item-input {
+    flex-grow: 1;
+    border: 2px solid #d8bfd8;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#item-input:focus {
+    outline: none;
+    border-color: #4b0082;
+}
+
+#pantry-form button {
+    background-color: #8a2be2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#pantry-form button:hover {
+    background-color: #6a1a9a;
+}
+
+#pantry-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#pantry-list li {
+    background-color: #e6e6fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-break: break-all;
+}
+
+.delete-btn {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #e0442a;
+}
