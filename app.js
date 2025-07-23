@@ -3,7 +3,7 @@
 const SUPABASE_URL = 'https://tgwwiwqrxypnfudmwaat.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRnd3dpd3FyeHlwbmZ1ZG13YWF0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTMxNTYyOTMsImV4cCI6MjA2ODczMjI5M30.EzxncKbh-a9eyd9a7KprslvQUunOspUvP33QXS8GN5g';
 
-const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 // --- Step 2: Get HTML Elements ---
 const form = document.getElementById('pantry-form');
