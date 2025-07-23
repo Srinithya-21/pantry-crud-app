@@ -179,3 +179,80 @@ h2 {
 .delete-btn:hover {
     background-color: #e0442a;
 }
+/* --- Styles for New Table and Form --- */
+
+/* Makes the two input fields sit side-by-side */
+#pantry-form {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 10px; /* Space between elements */
+    align-items: center;
+}
+
+.form-inputs {
+    display: flex;
+    flex-grow: 1; /* Allows this container to grow and fill space */
+    gap: 10px;
+}
+
+#pantry-form button {
+    margin-left: 0; /* Reset margin from previous design */
+}
+
+/* Container for the table to allow scrolling on small screens */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Adds a scrollbar if table is too wide */
+    margin-top: 25px;
+}
+
+#pantry-table {
+    width: 100%;
+    border-collapse: collapse; /* Merges cell borders for a cleaner look */
+}
+
+#pantry-table th, #pantry-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#pantry-table th {
+    background-color: #e6e6fa; /* Lavender header */
+    color: #4b0082;
+    font-weight: bold;
+}
+
+#pantry-table tr:last-child td {
+    border-bottom: none; /* Removes bottom border from the last row */
+}
+
+/* Styling for the action buttons inside the table */
+.actions-cell {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between buttons */
+}
+
+.quantity-btn, .remove-btn {
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.quantity-btn:hover, .remove-btn:hover {
+    transform: scale(1.1);
+}
+
+.quantity-btn {
+    background-color: #8a2be2; /* Purple */
+}
+
+.remove-btn {
+    background-color: #ff6347; /* Tomato Red */
+}
