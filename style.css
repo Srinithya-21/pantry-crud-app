@@ -6,7 +6,69 @@ body {
     align-items: center;
     min-height: 100vh;
 }
+/* In style.css */
 
+/* --- Styles for new elements --- */
+
+/* Button on pantry page to go to the meals page */
+.action-button {
+    display: block;
+    width: fit-content;
+    margin: -10px auto 20px;
+    padding: 10px 20px;
+    background-color: #4b0082;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.action-button:hover {
+    background-color: #6a1a9a;
+    transform: translateY(-2px);
+}
+
+/* Styles for the meals page */
+.subtitle {
+    text-align: center;
+    color: #555;
+    margin-top: -15px;
+    margin-bottom: 25px;
+}
+
+#meals-list ul {
+    list-style-type: '🍳 '; /* Fun emoji bullet point */
+    padding-left: 20px;
+}
+
+#meals-list li {
+    background-color: #f5f0ff;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.loading-text, #meals-list p {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    color: #8a2be2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
 /* Welcome Page Styles */
 .welcome-page {
     background: linear-gradient(135deg, #e6e6fa, #d8bfd8);
